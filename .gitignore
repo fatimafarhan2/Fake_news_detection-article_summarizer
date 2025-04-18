@@ -1,0 +1,23 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Environment folders
+env/
+env1/
+venv/
+.venv/
+
+# IDE and editor folders
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# dotenv files
+.env
+.env.*
+
+# Logs
+*.log 
