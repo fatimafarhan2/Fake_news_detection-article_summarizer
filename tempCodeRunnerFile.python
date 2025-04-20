@@ -1,0 +1,6 @@
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()  # fig is the full figure, ax is the actual plot
+ax.plot([1, 2, 3], [4, 5, 6]) 
+
+
