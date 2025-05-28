@@ -2,6 +2,7 @@
 import trafilatura
 import json
 from app.utils.cleaning import clean_txt
+from app.utils.summarizer import text_summarizer
 # import newspaper3k
 # from bs4 import BeautifulSoup
 
@@ -25,10 +26,12 @@ def scrape_article_content(url):
             include_comments=False,
             include_tables=False,
             include_images=False)
+        
         if result:
             data= json.loads(result)
             if  'text' in data:
                 clean_dt=clean_txt(data['text'])
+                
                 return {
                     "title": data.get('title'),
                     "text": clean_dt,
